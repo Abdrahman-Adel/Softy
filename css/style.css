@@ -1,0 +1,731 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+
+/* global */
+a {
+    text-decoration: none;
+     color: #000
+}
+
+ul {
+    list-style-type: none;
+}
+
+::selection {
+    background: #ff589e;
+    color: #fff
+}
+/*global*/
+
+.container {
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    height: 100vh;
+    background: url('../img/banner-bg.png');
+    background-size: cover;
+    padding-top: 20px;
+    position: relative;
+}
+
+nav {
+    width:1280px;
+    background: #DDD;
+    height: 80px;
+    display: flex;
+    padding: 22px 15px;
+    border-radius: 60px;
+    background: #FFF;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0px 0px 14px #2f2f2f;
+}
+
+.logo {
+    flex-basis: 30%
+}
+.links {
+    flex-basis: 70%;
+}
+.links ul {
+    padding: 3px
+}
+.links ul li {
+    display: inline-block;
+    padding-right: 28px;
+}
+
+.links ul li a {
+    font-size: 18px;
+    transition: all 0.2s ease-in-out
+}
+
+.links ul li a:hover {
+    color: #ff589e
+}
+
+.dicovermore{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.dicovermore h2 {
+    font-weight: 200;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+.dicovermore h2:nth-child(1) {
+    font-size: 40px;
+}
+
+.dicovermore h2:nth-child(2){
+    font-size: 38px;
+    
+}
+
+.dicovermore h2 span {
+    font-weight: bold;
+    letter-spacing: 2px
+}
+
+.dicovermore p{
+    width: 80%;
+    margin: 15px auto;
+    line-height: 1.7;
+    color: #FFF;
+}
+
+.dicovermore button {
+    border: none;
+    background: #ff589e;
+    padding: 15px;
+    border-radius: 40px;
+    width: 175px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #FFF;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.dicovermore button:hover {
+    background: #8261ee;
+}
+
+.about {
+    height: 266px;
+    position: absolute;
+    top: 88%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
+
+.about .modern,
+.about .best,
+.about .ultimate{
+    flex-basis: 30.333%;
+    text-align: center;
+    padding: 25px 0;
+    background: #FFF;
+    border-radius: 40px;
+    box-shadow: 0px 0px 40px #333
+} 
+
+.about .modern img,
+.about .best img,
+.about .ultimate img{
+    width:60px;
+}
+
+.about .modern .circle,
+.about .best .circle,
+.about .ultimate .circle{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: #8261ee;
+    border-radius: 50px;
+    padding: 25px 0;
+}
+
+.about .modern  p,
+.about .best  p,
+.about .ultimate p {
+    color: #777;
+    font-size: 15px;
+    font-weight: 400;
+    width: 70%;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    margin-top: 18px;
+    line-height: 1.7
+}
+
+.about .modern  h3,
+.about .best  h3,
+.about .ultimate h3 {
+    margin-top: 18px
+}
+/* end header */
+
+/* start about */
+
+.about2 {
+    padding: 100px 0;
+   
+    margin: 200px 0
+}
+
+.aboutbox {
+    display:flex;
+    flex-wrap: wrap;
+}
+.imgbox,.pargraph {
+    flex-basis: 50%
+}
+
+.pargraph {
+    padding: 50px 0;
+}
+
+.pargraph h2 {
+    font-weight: lighter;
+    margin-bottom: 50px;
+}
+
+
+.pargraph p {
+    color:#777;
+    line-height: 1.7;
+    width: 75%;
+    font-size: 18px
+}
+.imgbox {
+    padding-left: 140px;
+}
+
+.aboutbox hr {
+    flex-basis: 100%;
+    margin: 150px 0;
+    color: #777;
+    border: 1px solid #7777773d
+}
+
+.aboutbox .imgbox:last-child {
+    padding-left: 120px
+}
+
+/* end about */
+
+/* start workprocess */
+
+.workprocess {
+    padding: 80px 0;
+    background: url('../img/work-process-bg.png') fixed;
+    background-size: cover;
+    height: 600px;
+
+}
+
+.processp{
+    text-align: center;
+    color: #FFF
+}
+
+.processp h2{
+    margin-bottom: 15px;
+    font: 35px lighter
+}
+
+.processp p {
+    line-height: 1.7;
+    width: 45%;
+    margin: 0 auto;
+    color: #FFFFFFBD;
+}
+.boxsix{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 80px;
+    height: 200px
+}
+
+.boxsix .smalldiv {
+    padding: 20px 0;
+    background: #FFF;
+    border-radius: 40px;
+    flex-basis: 14.6%;
+    box-shadow: 11px 9px 0 #ad9fd9a1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer
+    
+}
+
+.boxsix .smalldiv h4 {
+    margin: 10px 0;
+    font-weight: lighter
+}
+
+.boxsix .smalldiv p {
+    width: 45%;
+    margin: 0 auto;
+    color: #777;
+    line-height: 1.7
+}
+
+.boxsix .smalldiv:hover {
+    transform: translate(0,-15px)
+}
+
+/* end work process */
+
+/* start testiminials */
+
+.testimonials {
+    padding: 120px 0;
+}
+.testimonials .testip {
+    text-align: center;
+}
+
+.testimonials .testip h2 {
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-size: 35px
+}
+
+.testimonials .testip p {
+    width: 50%;
+    margin: 0 auto;
+    color: #777;
+    font-size: 20px;
+}
+
+.commentbox {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentbox .comment {
+    flex-basis: 31.333%;
+    box-shadow: 0px 0px 26px #3333333d;
+    padding: 31px 15px 40px 15px;
+    border-radius: 30px; 
+}
+
+.commentbox .comment .commentimg {
+    text-align: center;
+    margin: 20px;
+}
+
+.commentbox .comment p {
+    width: 90%;
+    font-size: 18px;
+    color: #777;
+    line-height: 1.7;
+    margin-bottom: 20px
+}
+
+.who {
+    display: flex
+}
+
+.who .smallimg  img {
+    border-radius: 50%
+}
+
+.who .person {
+    margin-left: 20px;
+    transition: all 0.4s ease-in-out
+}
+
+.who .person h4 {
+    margin: 8px 0 5px 0;
+    letter-spacing: 1px;
+    font: 20px lighter 
+}
+
+.who .person span {
+    color: #ff589e;
+    font-size: 17px
+}
+
+.comment:hover .person {
+    transform: translate(15px,0)
+}
+
+/*end testimonials*/
+
+/* start pircing plan */
+
+.pricing {
+    padding: 80px 0;
+    background:#f2f2fe;
+}
+
+.global-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.global-header h2 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.global-header p {
+    width:40%;
+    margin: 0 auto;
+    color:#777;
+    line-height: 1.7;
+}
+
+.price {
+    display:flex;
+    justify-content: space-between;
+    
+}
+
+.pricebox {
+    flex-basis: 31.33%;
+    background: #FFF;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px
+}
+
+.pricebox > span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 17px
+}
+.price .pricebox:nth-last-of-type(2) .coast{
+    background: #ff589e;
+}
+.coast {
+    width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+    background: #8261ee;
+    color: #FFF;
+    margin-bottom: 25px
+}
+
+.coast .dollar {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.coast span {
+    display: block;
+}
+
+.coast .pricing-span {
+    padding-top: 15px;
+    font-size: 30px;
+}
+
+.price-list li {
+    margin-bottom: 15px;
+    color: #777
+}
+
+.line-through {
+    text-decoration: line-through
+}
+
+.pricebox .purchase-now {
+    margin-top: 35px;
+    border:none;
+    background: #8261ee;
+    border-radius: 20px;
+    padding: 12px 25px;
+    color:#FFF;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out
+}
+ .pricebox .purchase-now:hover {
+    background:#ff589e
+}
+
+/* end price splan */
+
+/* start price tables */
+
+.price-back {
+    background: url('../img/fun-facts-bg.png');
+    height: 400px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative
+}
+
+.price-back .price-table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    width: 100%
+}
+
+.price-back .price-table .tables{
+    transition: all 0.2s ease-in-out
+}
+
+.price-back .price-table .tables,
+.price-back .price-table .tables-back {
+    flex-basis: 14.777%;
+    text-align: center;
+    color: #FFF
+}
+
+.bolck {
+    display: block
+}  
+
+.tables-back {
+    background: url('../img/circle-dec.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+} 
+
+.price-back .price-table .tables strong {
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 35px
+}
+
+.price-back .price-table .tables:nth-of-type(1)  strong  span {
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    font-size: 38px;
+}
+
+.price-back .price-table .tables:nth-of-type(3)  strong  span {
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    font-size: 38px;
+}
+
+.price-back .price-table .tables:nth-of-type(5)  strong  span {
+    display: inline-block;
+    position: relative;
+    bottom: 3px;
+    font-size: 38px;
+}
+
+.price-back .price-table .tables:nth-of-type(7)  strong  span {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    font-size: 38px;
+}
+
+
+.price-back .price-table .tables > span {
+    font-size: 18px
+}
+
+.price-back .price-table .tables-back:nth-of-type(2),
+.price-back .price-table .tables-back:nth-of-type(6){
+    height: 20px;
+    position: relative;
+    bottom: -42px;
+}
+
+.price-back .price-table .tables-back:nth-of-type(4) {
+    height: 20px;
+    position: relative;
+    bottom: -17px;
+}
+
+.price-back .price-table .tables:hover {
+    transform: translate(0,-15px)
+}
+/* end price */
+
+/* start blog entities */
+.blog-entities {
+    margin-top: 100px;
+}
+.blog-items {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.blog-items .item {
+    flex-basis: 31.333;
+    text-align: center;
+}
+
+.blog-items .item .blog-img {
+    margin-bottom: 25px
+}
+
+.blog-items .item a {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 25px;
+    transition: all 0.3s ease-in-out
+}
+
+.blog-items .item a:hover{
+    color: #ff589e
+}
+
+.blog-items .item p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #777;
+    line-height: 1.7
+}
+
+.blog-items .item .blog-btn {
+    border: none;
+    background: #8261ee;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    color:#FFF;
+    font-weight: lighter;
+    transition: all 0.3s ease-in-out
+}
+.blog-items .item .blog-btn:hover {
+    background:#ff589e;
+    cursor: pointer
+}
+ /* end ------------ */
+
+/* start talk to us */
+
+.talk-to-us {
+    margin-top: 80px;
+    padding: 150px 0;
+    background: #f2f2fe;
+    justify-content: space-between;
+}
+.talk-form {
+    display: flex;
+    
+}
+
+.why-us {
+    flex-basis: 35%;
+}
+.why-us h4 {
+    margin-bottom: 20px;
+    font-weight: lighter;
+    font-size: 18px;
+
+}
+
+.why-us .firstp,
+.why-us .secondp{
+    margin-bottom: 30px;
+    line-height: 1.7;
+    color:#777;
+    width: 85%
+}
+.second-div {
+    flex-basis: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+    
+}
+
+.second-div .input {
+    flex-basis: 48%
+}
+
+.second-div .input:first-child {
+    flex-basis: 48%
+}
+
+.input input {
+    width: 100%;
+    padding: 12px 9px;
+    border: none;
+    border-radius: 17px;
+}
+
+.text-area {
+    flex-basis: 100%;
+    margin-top: 30px;
+    
+}
+
+.text-area textarea {
+    border:none;
+    border-radius: 20px;
+    resize: none;
+    padding: 14px
+}
+
+.btn {
+    flex-basis: 100%
+}
+
+.btn button {
+    margin-top: 27px;
+    border: none;
+    background: #8261ee;
+    padding: 10px 18px;
+    color: #FFF;
+    text-transform: capitalize;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+
+/* end talk to us */
+
+footer {
+    background-image:linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+}
+
+footer .icons {
+    text-align: center;
+    padding: 40px 0
+}
+
+footer .icons ul li {
+    display: inline-block
+}
+
+.copy {
+    color:#FFF;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.copy span {
+    font-size: 13px;
+}
+
+footer hr {
+    border: 1px solid #BDBDBD40;
+    margin: 0 auto;
+}
